@@ -1,0 +1,16 @@
+-- Ch?n CSDL student-management (ho?c CSDL ?? bài yêu c?u)
+USE `student-management`;
+
+-- 1. T?o b?ng Class (các tr??ng: id, name)
+CREATE TABLE Class (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL
+);
+
+-- 2. T?o b?ng Teacher (các tr??ng: id, name, age, country)
+CREATE TABLE Teacher (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    age INT,
+    country VARCHAR(100)
+);
